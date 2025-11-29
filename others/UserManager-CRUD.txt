@@ -1,0 +1,84 @@
+📘 PROPOSTA DE PROJETO – Sistema de Gerenciamento de Usuários (CRUD em Java e MariaDB)
+📌 1. Nome do Projeto
+
+UserManager – Sistema de Gerenciamento de Usuários
+
+📌 2. Objetivo Geral
+
+Desenvolver uma aplicação em Java puro, executada via terminal, utilizando JDBC para conexão com o banco MariaDB, com o objetivo de treinar e consolidar conhecimentos em:
+
+Estruturas de classes Java
+
+Encapsulamento (getters e setters)
+
+Operações CRUD (Create, Read, Update, Delete)
+
+Padrão DAO (Data Access Object)
+
+Acesso direto a banco via JDBC
+
+Execução de projetos Java via terminal
+
+Organização em pacotes (model, dao, app)
+
+📌 3. Escopo do Projeto
+
+O sistema permitirá ao usuário realizar operações básicas sobre um cadastro de usuários armazenados em um banco de dados MariaDB.
+
+Cada usuário terá os seguintes atributos:
+
+id (inteiro, auto incremento)
+
+nome
+
+email
+
+idade
+
+📌 4. Funcionalidades do Sistema (CRUD Completo)
+✔ Create
+
+Cadastrar novos usuários informando nome, email e idade.
+
+✔ Read
+
+Listar todos os usuários cadastrados no banco.
+
+✔ Update
+
+Atualizar os dados de um usuário já existente.
+
+✔ Delete
+
+Excluir um usuário pelo ID.
+
+📌 5. Requisitos do Sistema
+🔧 Tecnologias
+
+Java SE 17+
+
+MariaDB 10+
+
+JDBC (driver: mariadb-java-client.jar)
+
+Terminal / Shell
+
+Editor de código (VS Code, IntelliJ, etc.)
+
+💾 Banco de Dados
+
+Banco: crud_java
+Tabela: usuários
+
+📌 6. Estrutura de Pastas do Projeto
+projeto-crud/
+ ├─ dao/
+ │   ├─ ConnectionFactory.java
+ │   └─ UsuarioDAO.java
+ ├─ model/
+ │   └─ Usuario.java
+ ├─ app/
+ │   └─ Main.java
+ ├─ lib/
+ │   └─ mariadb-java-client-3.x.x.jar
+ └─ bin/ (gerado após compilação)

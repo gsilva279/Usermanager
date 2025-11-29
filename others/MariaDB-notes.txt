@@ -1,0 +1,7 @@
+---> onde fica os arquivos: /var/lib/mysql/
+---> para entrar no mariaDB pelo terminal: mysql -u root -p
+# digite a senha ete
+
+## Comands MariaDB
+- For change the name of colunm: ALTER Tabela name_table CHANGE colunm_name_old colunm_name_new TYPE;
+

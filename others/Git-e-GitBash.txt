@@ -1,0 +1,119 @@
+TRABALHANDO COM GIT E GITBASH
+https://github.com/gsilva279/Projeto-Java.git
+diretório: C:\VScode_codes\codesJAVA\Projeto-Java\project-DIO
+
+===============================[Commit normal]===================================
+#Voltar:
+cd ..
+
+# Clonando o repositório.
+git clone https://github.com/usuario/nome-do-repositorio.git
+
+# Navegando até o diretório do repositório clonado
+cd nome-do-repositorio
+
+# Adicionando as alterações ao staging
+git add . [ou substitua o "." pelo nome do arquivo desejado]
+
+# Fazendo o commit das alterações
+git commit -m "Adiciona nova informação ao arquivo.txt"
+
+# Enviando as alterações para o GitHub
+git push origin main
+
+--> Nota: Se a branch principal do seu repositório for diferente de main, substitua main pelo nome da sua branch.
+
+# Verifique o status do repositório local
+git status
+
+# Verifique o histórico de commits
+git log
+
+#Para sair do git log, simplesmente pressione: q
+
+====================[Repo local --> Repo Github ]================================
+# 1. Navegue até a pasta do seu projeto
+cd /caminho/da/sua/pasta
+
+# 2. Inicie o Git na pasta
+git init
+
+# 3. Adicione todos os arquivos ao controle de versão
+git add .
+
+# 4. Faça o primeiro commit
+git commit -m "Primeiro commit"
+
+# 5. Adicione o repositório remoto (substitua pela URL do seu GitHub)
+git remote add origin https://github.com/seu-usuario/seu-repositorio.git
+
+# 6. Defina o nome da branch como main (padrão do GitHub)
+git branch -M main
+
+# 7. Envie para o GitHub
+git push -u origin main
+================================================================================
+
+OUTROS COMANDOS:
+Observações
+	<URL_DO_REPOSITORIO>: Substitua pela URL do repositório que você 	deseja clonar.
+	<branch>: Substitua pelo nome da branch que você está usando (por 	exemplo, main ou develop).
+	<nome_da_branch>: Substitua pelo nome da branch que você deseja criar 	ou excluir.
+	<hash_do_commit>: Substitua pelo hash do commit que você deseja 	reverter.
+
+# Inicializa um novo repositório Git no diretório atual
+git init  # Cria um novo repositório Git vazio
+
+# Clona um repositório remoto para o diretório local
+git clone <URL_DO_REPOSITORIO>  
+	Ex: git clone https://github.com/usuario/nome-do-repositorio.git
+
+# Verifica o status dos arquivos no repositório
+git status  # Mostra quais arquivos foram modificados, adicionados ou removidos
+
+# Adiciona arquivos ao staging (preparando para commit)
+git add <arquivo>  # Adiciona um arquivo específico
+git add .          # Adiciona todos os arquivos modificados
+
+# Faz um commit das alterações no repositório local
+git commit -m "Mensagem do commit"  # Registra as alterações com uma mensagem descritiva
+
+# Mostra o histórico de commits
+git log  # Exibe uma lista de commits feitos no repositório
+
+# Mostra as alterações feitas em relação ao último commit
+git diff  # Exibe as diferenças entre o estado atual e o último commit
+
+# Mostra as alterações que estão no staging
+git diff --cached  # Exibe as diferenças entre o staging e o último commit
+
+# Sincroniza o repositório local com o repositório remoto
+git pull origin <branch>  # Puxa as alterações da branch especificada do repositório remoto
+
+# Envia as alterações do repositório local para o repositório remoto
+git push origin <branch>  # Envia as alterações da branch especificada para o repositório remoto
+
+# Cria uma nova branch
+git branch <nome_da_branch>  # Cria uma nova branch com o nome especificado
+
+# Troca para uma branch existente
+git checkout <nome_da_branch>  # Muda para a branch especificada
+
+# Cria e troca para uma nova branch ao mesmo tempo
+git checkout -b <nome_da_branch>  # Cria e muda para a nova branch
+
+# Mescla uma branch com a branch atual
+git merge <nome_da_branch>  # Mescla as alterações da branch especificada na branch atual
+
+# Remove um arquivo do repositório e do sistema de arquivos
+git rm <arquivo>  # Remove o arquivo especificado
+
+# Reverte um commit específico
+git revert <hash_do_commit>  # Cria um novo commit que desfaz as alterações do commit especificado
+
+# Exclui uma branch local
+git branch -d <nome_da_branch>  # Exclui a branch especificada localmente
+
+# Exclui uma branch remota
+git push origin --delete <nome_da_branch>  # Exclui a branch especificada do repositório remoto
+
